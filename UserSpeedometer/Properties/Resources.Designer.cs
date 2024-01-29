@@ -83,6 +83,16 @@ namespace UserSpeedometer.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap guage3 {
+            get {
+                object obj = ResourceManager.GetObject("guage3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap pin2 {
             get {
                 object obj = ResourceManager.GetObject("pin2", resourceCulture);
@@ -136,6 +146,16 @@ namespace UserSpeedometer.Properties {
         internal static System.Drawing.Bitmap pin7 {
             get {
                 object obj = ResourceManager.GetObject("pin7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap pin8 {
+            get {
+                object obj = ResourceManager.GetObject("pin8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

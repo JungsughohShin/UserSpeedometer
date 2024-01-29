@@ -23,7 +23,7 @@ namespace UserSpeedometer
     public partial class UserControl1: UserControl
     {
         //Load an image in from a file
-        public Image pin_image = Properties.Resources.pin7;
+        public Image pin_image = Properties.Resources.pin8;
 
         public string angleVal="0";
 
@@ -174,11 +174,7 @@ namespace UserSpeedometer
             label8.BackColor = Color.Transparent;
             label8.Parent = pictureBox1;
 
-            //Load an image in from a file
-            //pin_image = Properties.Resources.pin7;
-            //Set our picture box to that image
-            //pictureBox2.Image = RotateImage(pin_image, new PointF(pin_image.Width / 2, pin_image.Height / 2), -150);
-            //pictureBox2.Image = RotateImage(pin_image, new PointF(pin_image.Width / 2, pin_image.Height / 2), Convert.ToInt32(angleVal));
+           
         }
         // 이미지 회전
         public static Bitmap RotateImage(Image image, PointF offset, float angle)

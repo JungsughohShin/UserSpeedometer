@@ -127,6 +127,9 @@
   <data name="pointer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pointer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pin8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pin8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pin6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pin6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,13 +139,16 @@
   <data name="pin4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pin4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pin7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pin7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pin2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pin2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pin5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pin5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pin7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pin7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="guage3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guage3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
