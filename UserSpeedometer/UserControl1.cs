@@ -13,14 +13,103 @@ using System.Windows.Forms;
 //https://stackoverflow.com/questions/11412169/is-it-possible-to-have-two-overlapping-picturebox-controls-with-transparent-imag
 //userproperty 
 //https://www.youtube.com/watch?v=o2PQDs90iHA&list=PLoFFz2j8yxxxH_3ustbHATXtMsHZ-Saei
-//
-
+//https://bravochoi.tistory.com/115
 
 
 namespace UserSpeedometer
 {
     public partial class UserControl1: UserControl
     {
+
+        [Category("UserProperty"),Description("Number1")]
+        public string Number1
+        {
+            get {
+                return this.label1.Text;
+            }
+            set {
+                this.label1.Text = value;
+            
+            }
+        }
+        [Category("UserProperty"), Description("Number2")]
+        public string Number2
+        {
+            get
+            {
+                return this.label2.Text;
+            }
+            set
+            {
+                this.label2.Text = value;
+
+            }
+        }
+        [Category("UserProperty"), Description("Number3")]
+        public string Number3
+        {
+            get
+            {
+                return this.label3.Text;
+            }
+            set
+            {
+                this.label3.Text = value;
+
+            }
+        }
+        [Category("UserProperty"), Description("Number4")]
+        public string Number4
+        {
+            get
+            {
+                return this.label4.Text;
+            }
+            set
+            {
+                this.label4.Text = value;
+
+            }
+        }
+        [Category("UserProperty"), Description("Number5")]
+        public string Number5
+        {
+            get
+            {
+                return this.label5.Text;
+            }
+            set
+            {
+                this.label5.Text = value;
+
+            }
+        }
+        [Category("UserProperty"), Description("Number6")]
+        public string Number6
+        {
+            get
+            {
+                return this.label6.Text;
+            }
+            set
+            {
+                this.label6.Text = value;
+
+            }
+        }
+        [Category("UserProperty"), Description("Number7")]
+        public string Number7
+        {
+            get
+            {
+                return this.label7.Text;
+            }
+            set
+            {
+                this.label7.Text = value;
+
+            }
+        }
         public UserControl1()
         {
             InitializeComponent();
