@@ -14,13 +14,21 @@ using System.Windows.Forms;
 //userproperty 
 //https://www.youtube.com/watch?v=o2PQDs90iHA&list=PLoFFz2j8yxxxH_3ustbHATXtMsHZ-Saei
 //https://bravochoi.tistory.com/115
+//Picture Rotation
+//https://www.codeproject.com/Articles/58815/C-Image-PictureBox-Rotations
 
 
 namespace UserSpeedometer
 {
     public partial class UserControl1: UserControl
     {
+        //Load an image in from a file
+        public Image pin_image = Properties.Resources.pin7;
 
+        public string angleVal="0";
+
+
+        //User Property
         [Category("UserProperty"),Description("Number1")]
         public string Number1
         {
@@ -110,6 +118,34 @@ namespace UserSpeedometer
 
             }
         }
+        [Category("UserProperty"), Description("MeterName")]
+        public string MeterName
+        {
+            get
+            {
+                return this.label8.Text;
+            }
+            set
+            {
+                this.label8.Text = value;
+
+            }
+        }
+        [Category("UserProperty"), Description("Angle")]
+        public string Angle
+        {   
+            get
+            {
+                return angleVal;
+            }
+            set
+            {   //1눈금당 10도이다.
+                angleVal = value;
+                pictureBox2.Image = RotateImage(pin_image, new PointF(pin_image.Width / 2, pin_image.Height / 2), Convert.ToInt32(angleVal));
+            }
+        }
+      
+
         public UserControl1()
         {
             InitializeComponent();
@@ -135,6 +171,44 @@ namespace UserSpeedometer
             label6.Parent = pictureBox1;
             label7.BackColor = Color.Transparent;
             label7.Parent = pictureBox1;
+            label8.BackColor = Color.Transparent;
+            label8.Parent = pictureBox1;
+
+            //Load an image in from a file
+            //pin_image = Properties.Resources.pin7;
+            //Set our picture box to that image
+            //pictureBox2.Image = RotateImage(pin_image, new PointF(pin_image.Width / 2, pin_image.Height / 2), -150);
+            //pictureBox2.Image = RotateImage(pin_image, new PointF(pin_image.Width / 2, pin_image.Height / 2), Convert.ToInt32(angleVal));
+        }
+        // 이미지 회전
+        public static Bitmap RotateImage(Image image, PointF offset, float angle)
+        {
+            if (image == null)
+                throw new ArgumentNullException("image");
+            //create a new empty bitmap to hold rotated image
+
+            Bitmap rotatedBmp = new Bitmap(image.Width, image.Height);
+            rotatedBmp.SetResolution(image.HorizontalResolution, image.VerticalResolution);
+
+            //make a graphics object from the empty bitmap
+            Graphics g = Graphics.FromImage(rotatedBmp);
+
+
+
+            //Put the rotation point in the center of the image
+            g.TranslateTransform(offset.X, offset.Y);
+
+            //rotate the image
+            g.RotateTransform(angle);
+            //move the image back
+            g.TranslateTransform(-offset.X, -offset.Y);
+
+
+
+            //draw passed in image onto graphics object
+            g.DrawImage(image, new PointF(0, 0));
+
+            return rotatedBmp;
 
         }
 
@@ -154,6 +228,16 @@ namespace UserSpeedometer
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }

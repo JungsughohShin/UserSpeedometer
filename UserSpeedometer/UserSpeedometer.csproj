@@ -60,6 +60,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
@@ -82,6 +83,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pin4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pin5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pin6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pin7.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
